@@ -1,0 +1,20 @@
+{
+  "name": "clouddrift",
+  "version": "1.0.0",
+  "description": "soft clouds drift on your terminal...",
+  "main": "clouddrift.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ascii",
+    "clouds",
+    "terminal",
+    "art",
+    "ricing",
+    "terminal",
+    "screensaver"
+  ],
+  "author": "oliver thurley",
+  "license": "ISC"
+}
