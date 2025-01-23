@@ -2,6 +2,7 @@
 // soft drifting clouds across your terminal...
 // oliver thurley, jan 2025
 
+#!/usr/bin/env node
 import chalk from "chalk";
 import { createNoise3D } from "simplex-noise";
 
