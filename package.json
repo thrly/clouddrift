@@ -1,17 +1,16 @@
 {
   "name": "clouddrift",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "soft clouds drift on your terminal...",
-  "main": "bin/clouddrift.js",
+  "main": "./clouddrift.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thrly/clouddrift.git"
   },
   "homepage": "https://github.com/thrly/clouddrift#readme",
   "bin": {
-    "clouddrift": "cli.js"
+    "clouddrift": "clouddrift.js"
   },
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
