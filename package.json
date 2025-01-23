@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "soft clouds drift on your terminal...",
   "main": "clouddrift.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thrly/clouddrift.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
