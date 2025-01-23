@@ -16,5 +16,9 @@
     "screensaver"
   ],
   "author": "oliver thurley",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "simplex-noise": "^4.0.3",
+    "chalk": "^5.4.1"
+  }
 }
