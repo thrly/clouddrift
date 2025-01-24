@@ -21,12 +21,13 @@ designed for terminals with truecolor (like Windows powershell), **clouddrift** 
 
 ### requirements
 
-**clouddrift** uses the following npm packages:
+**clouddrift** assumes you already have [node](https://nodejs.org/en)/npm installed and uses the following npm dependencies:
 
 - [chalk](https://www.npmjs.com/package/chalk) - for styling
 - [simplex-noise.js](https://www.npmjs.com/package/simplex-noise) - for creating a 3D noise space to generate the clouds
+- [supports-color](https://www.npmjs.com/package/supports-color) - checks your terminal for truecolor support
 
-if they're not already on your system, the install process will add them for you.
+(if they're not already on your system, the npm install process will add them for you.)
 
 ### "the colours on mac OS terminal look wrong!"
 
