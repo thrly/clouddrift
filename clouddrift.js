@@ -5,6 +5,7 @@
 // oliver thurley, jan 2025
 
 import chalk from "chalk";
+import supportsColor from "supports-color";
 import { createNoise3D } from "simplex-noise";
 
 const noise3D = createNoise3D(); // init noise function
@@ -49,16 +50,30 @@ const main = async () => {
       // uses the Catppuccin Mocha palette: https://catppuccin.com/palette
       // I really wish Chalk had HSL, so I could vary the lightness based on the noise value for a lovely gradient...
       // TODO: write an HSL to RGB/HEX function...
-      if (randomVal < 0.2) {
-        process.stdout.write(chalk.hex("#a6adc8")("█"));
-      } else if (randomVal >= 0.2 && randomVal < 0.25) {
-        process.stdout.write(chalk.bgHex("#1e1e2e").hex("#9399b2")("█")); // "▓"
-      } else if (randomVal >= 0.25 && randomVal < 0.3) {
-        process.stdout.write(chalk.bgHex("#1e1e2e").hex("#7f849c")("▓")); // "▒"
-      } else if (randomVal >= 0.3 && randomVal < 0.325) {
-        process.stdout.write(chalk.hex("#6c7086")("▓")); // "░"
+      if (supportsColor.stderr.has16m) {
+        if (randomVal < 0.2) {
+          process.stdout.write(chalk.hex("#a6adc8")("█"));
+        } else if (randomVal >= 0.2 && randomVal < 0.25) {
+          process.stdout.write(chalk.bgHex("#1e1e2e").hex("#9399b2")("█")); // "▓"
+        } else if (randomVal >= 0.25 && randomVal < 0.3) {
+          process.stdout.write(chalk.bgHex("#1e1e2e").hex("#7f849c")("▓")); // "▒"
+        } else if (randomVal >= 0.3 && randomVal < 0.325) {
+          process.stdout.write(chalk.hex("#6c7086")("▓")); // "░"
+        } else {
+          process.stdout.write(chalk.hex("#1e1e2e")("█"));
+        }
       } else {
-        process.stdout.write(chalk.hex("#1e1e2e")("█"));
+        if (randomVal < 0.2) {
+          process.stdout.write(chalk.ansi256(206)("█"));
+        } else if (randomVal >= 0.2 && randomVal < 0.25) {
+          process.stdout.write(chalk.ansi256(207)("█")); // "▓"
+        } else if (randomVal >= 0.25 && randomVal < 0.3) {
+          process.stdout.write(chalk.ansi256(213)("█")); // "▒"
+        } else if (randomVal >= 0.3 && randomVal < 0.325) {
+          process.stdout.write(chalk.ansi256(219)("█")); // "░"
+        } else {
+          process.stdout.write(chalk.ansi256(45)("█"));
+        }
       }
     }
   }

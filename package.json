@@ -26,8 +26,9 @@
   "author": "oliver thurley",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.4.1",
     "simplex-noise": "^4.0.3",
-    "chalk": "^5.4.1"
+    "supports-color": "^10.0.0"
   },
   "bugs": {
     "url": "https://github.com/thrly/clouddrift/issues"
