@@ -64,17 +64,30 @@ const main = async () => {
         }
       } else {
         if (randomVal < 0.2) {
-          process.stdout.write(chalk.ansi256(206)("█"));
+          process.stdout.write(chalk.ansi256(219)("█"));
         } else if (randomVal >= 0.2 && randomVal < 0.25) {
-          process.stdout.write(chalk.ansi256(207)("█")); // "▓"
+          process.stdout.write(chalk.ansi256(219)("▓")); // "▓"
         } else if (randomVal >= 0.25 && randomVal < 0.3) {
-          process.stdout.write(chalk.ansi256(213)("█")); // "▒"
+          process.stdout.write(chalk.ansi256(219)("▒")); // "▒"
         } else if (randomVal >= 0.3 && randomVal < 0.325) {
-          process.stdout.write(chalk.ansi256(219)("█")); // "░"
+          process.stdout.write(chalk.ansi256(225)("▒")); // "░"
         } else {
-          process.stdout.write(chalk.ansi256(45)("█"));
+          process.stdout.write(" ");
         }
       }
+      // } else { // pink + teal color palette
+      //   if (randomVal < 0.2) {
+      //     process.stdout.write(chalk.ansi256(206)("█"));
+      //   } else if (randomVal >= 0.2 && randomVal < 0.25) {
+      //     process.stdout.write(chalk.ansi256(207)("█")); // "▓"
+      //   } else if (randomVal >= 0.25 && randomVal < 0.3) {
+      //     process.stdout.write(chalk.ansi256(213)("█")); // "▒"
+      //   } else if (randomVal >= 0.3 && randomVal < 0.325) {
+      //     process.stdout.write(chalk.ansi256(219)("█")); // "░"
+      //   } else {
+      //     process.stdout.write(chalk.ansi256(45)("█"));
+      //   }
+      // }
     }
   }
   frameCount++;
