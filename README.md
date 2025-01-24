@@ -23,12 +23,11 @@ designed for terminals with truecolor (like Windows powershell), **clouddrift** 
 
 if they're not already on your system, the install process will add them for you.
 
-### "the colors on mac OS terminal look wrong!"
-This is designed to run on a terminal that supports Truecolor, such as Windows'. Some terminals like the mac OS terminal have a more limited color palette, which looks horrible at the moment. I'm working on a check to run a simple black & white version on those terminals. Standby.
+### "the colours on mac OS terminal look wrong!"
+This is designed to run on a terminal that supports Truecolor, such as Windows'. Some terminals like the mac OS terminal have a more limited colour palette, so I've had to change the palette to more basic colours.
 
 ### roadmap
 I hope to add some more customisation in future:
-- fix colours on macOS and other ansi256 color terminals
 - varied/custom palettes and colour schemes
 - cloud control -- parameter control for cloud size and density
 - date/clock
