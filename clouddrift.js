@@ -64,13 +64,13 @@ const main = async () => {
         }
       } else {
         if (randomVal < 0.2) {
-          process.stdout.write(chalk.ansi256(219)("█"));
+          process.stdout.write(chalk.ansi256(212)("█"));
         } else if (randomVal >= 0.2 && randomVal < 0.25) {
-          process.stdout.write(chalk.ansi256(219)("▓")); // "▓"
+          process.stdout.write(chalk.ansi256(218)("▓")); // "▓"
         } else if (randomVal >= 0.25 && randomVal < 0.3) {
-          process.stdout.write(chalk.ansi256(219)("▒")); // "▒"
+          process.stdout.write(chalk.ansi256(224)("▒")); // "▒"
         } else if (randomVal >= 0.3 && randomVal < 0.325) {
-          process.stdout.write(chalk.ansi256(225)("▒")); // "░"
+          process.stdout.write(chalk.ansi256(230)("░")); // "░"
         } else {
           process.stdout.write(" ");
         }
