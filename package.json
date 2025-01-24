@@ -1,6 +1,6 @@
 {
   "name": "clouddrift",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "soft clouds drift on your terminal...",
   "main": "./clouddrift.js",
   "repository": {
@@ -26,8 +26,9 @@
   "author": "oliver thurley",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.4.1",
     "simplex-noise": "^4.0.3",
-    "chalk": "^5.4.1"
+    "supports-color": "^10.0.0"
   },
   "bugs": {
     "url": "https://github.com/thrly/clouddrift/issues"
